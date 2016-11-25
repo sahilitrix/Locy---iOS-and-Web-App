@@ -14,6 +14,7 @@
 		7D07BC3A1DE8DFF800CE53C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D07BC381DE8DFF800CE53C4 /* LaunchScreen.storyboard */; };
 		7D07BC451DE8DFF800CE53C4 /* LocyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07BC441DE8DFF800CE53C4 /* LocyTests.swift */; };
 		7D07BC501DE8DFF800CE53C4 /* LocyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07BC4F1DE8DFF800CE53C4 /* LocyUITests.swift */; };
+		7D07BC5F1DE8E76000CE53C4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D07BC5E1DE8E76000CE53C4 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7D07BC4B1DE8DFF800CE53C4 /* LocyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D07BC4F1DE8DFF800CE53C4 /* LocyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocyUITests.swift; sourceTree = "<group>"; };
 		7D07BC511DE8DFF800CE53C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D07BC5E1DE8E76000CE53C4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D07BC5F1DE8E76000CE53C4 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				7D07BC431DE8DFF800CE53C4 /* LocyTests */,
 				7D07BC4E1DE8DFF800CE53C4 /* LocyUITests */,
 				7D07BC2D1DE8DFF800CE53C4 /* Products */,
+				7D07BC5D1DE8E76000CE53C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				7D07BC511DE8DFF800CE53C4 /* Info.plist */,
 			);
 			path = LocyUITests;
+			sourceTree = "<group>";
+		};
+		7D07BC5D1DE8E76000CE53C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D07BC5E1DE8E76000CE53C4 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +207,14 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = B25Q8V2Z8P;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					7D07BC3F1DE8DFF800CE53C4 = {
 						CreatedOnToolsVersion = 8.1;
